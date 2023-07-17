@@ -1,0 +1,34 @@
+{
+  "name": "tailwind-class-prefixer",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "preview": "vite preview",
+    "build": "microbundle --target=node",
+    "dev": "microbundle --target=node watch"
+  },
+  "source": "src/main.ts",
+  "main": "./dist/main.js",
+  "module": "./dist/main.module.js",
+  "unpkg": "./dist/main.umd.js",
+  "types": "./dist/main.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "bin": {
+    "twprefix": ".index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "@types/yargs": "^17.0.24",
+    "microbundle": "^0.15.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.0",
+    "@expo/spawn-async": "^1.7.2",
+    "glob": "^10.3.3",
+    "yargs": "^17.7.2"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
